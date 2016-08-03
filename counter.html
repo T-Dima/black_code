@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="poyasn">осталось символов: 25</p>
+<textarea name="" id="text" cols="30" rows="10" onclick="f()" onkeyup="f()"></textarea>
+
+<script>
+    function f() {
+        var text = document.getElementById('text');
+        var content = text.value;
+        var dlina = content.length;
+        if (dlina > 25)
+            text.value = content.substr(0, 25);
+        var poyasn = document.getElementById('poyasn');
+        var ostalos = 25 - dlina;
+        poyasn.innerHTML = 'осталовь символов: ' + ostalos;
+        if (ostalos < 0)
+            ostalos = 0;
+
+    }
+</script>
+</body>
+</html>

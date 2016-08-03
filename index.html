@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <input type="text"  name="startMoneyInCasino">
+    <input type="text"  name="text1">
+    <input type="button" name="button1" onclick="addMoney(this.form)">
+</form>
+
+<script>
+
+function addMoney(form) {
+    if (form.startMoneyInCasino.value && form.text1.value == "")
+        alert("Укажите ставку");
+
+    else
+        alert(form.startMoneyInCasino.value);
+        alert(form.text1.value);
+}
+
+
+
+
+
+
+
+
+
+
+//function Human(name) {
+//    this.name = name;
+//}
+//Human.prototype.setName = function (name) {
+//    this.name = name;
+//};
+//Human.prototype.getName = function (name) {
+//return this.name;
+//};
+//
+//var human = new Human('john');
+//human.setName("Eddir");
+//    alert(human.getName());
+
+//var myCasino = new Casino(4, 5);
+//quantitySlotMachine = 3;
+//startMoneyInCasino = 0;
+//
+//   var Casino =  function  (quantitySlotMachine, startMoneyInCasino) {
+//
+//        this.quantitySlotMachine = quantitySlotMachine;
+//
+//        this.startMoneyInCasino = startMoneyInCasino;
+//    addSlotMashine ();
+//    };
+//
+// var SlotMachine =    function  (startMoneyInSlotMashine) {
+//        this.startMoneyInSlotMashine = startMoneyInSlotMashine;
+//    };
+//
+//
+//    var addSlotMashine = function (startMoneyInCasino) {
+//     if (this.startMoneyInCasino > 0){
+//         alert("агонь")
+//     }
+//     else alert("печалька");
+//    };
+//
+//    var casino = new Casino(quantitySlotMachine, startMoneyInCasino);
+//    var prosto =startMoneyInCasino/quantitySlotMachine;
+//    var ostatok = startMoneyInCasino % quantitySlotMachine;
+//    var celoe = Math.floor(startMoneyInCasino/quantitySlotMachine) ;
+//    var startMoneyInSlotMashine =Math.floor(startMoneyInCasino/quantitySlotMachine) ;
+//
+//
+//    console.log("Колличество автоматов в казино " + casino.quantitySlotMachine + '\n' + "колличество денег в казино " + casino.startMoneyInCasino );
+//    var slotMashine = new SlotMachine( "колличество денег на автомат " + startMoneyInSlotMashine + '\n' + "в первом автомате " );
+//    console.log(slotMashine);
+//    Casino.prototype = SlotMachine;
+//    console.log(startMoneyInSlotMashine);
+//    console.log("остаток " + ostatok );
+//    console.log("celoe " + celoe);
+//    console.log("просто " + prosto);
+
+
+
+
+
+
+</script>
+</body>
+</html>
